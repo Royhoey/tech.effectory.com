@@ -1,0 +1,21 @@
+    <h1>Blog posts</h1>
+    
+    <ul>
+    <% page.posts.each(function(post){ %>
+        <li>
+            <h2>
+                <a href="<%- url_for(post.path) %>">
+                    <%= post.title %>
+                </a> 
+            </h2>
+            <p>
+                by <%= post.author %> on <%= date(post.date, config.date_format) %> 
+            </p>
+            <% if(post.excerpt) { %>
+                <p>
+                    <%- post.excerpt %>
+                </p>
+            <% } %>
+        </li>
+      <% }) %>
+    </ul>

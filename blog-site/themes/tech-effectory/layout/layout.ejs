@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tech at Effectory - <%= config.title %></title>
+    
+    <meta name="title" content="Tech @ Effectory">
+    <meta name="description" content="A look ’behind the screens’ of Amsterdam's leading HR tech company">
+    <meta name="image" property="og:image" content="https://tech.effectory.com/images/open-graph-preview.jpg">
+    <meta name="keywords" content="tech,development,effectory,working,events,meetups">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta http-equiv="Content-Security-Policy" content="style-src 'self' http://fonts.googleapis.com https://fonts.googleapis.com 'sha256-gSJshu046+EPcpBffZVu0obbn4xBI4d3GFjgKSwCUtY=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='; font-src 'self' http://fonts.gstatic.com https://fonts.gstatic.com;"> -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#30b3af"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://tech.effectory.com/style/main.css" />
+    <style>
+        body:not(.no-js).fade-out {
+            opacity: 0;
+        }
+    </style>
+
+    <meta itemprop="name" content="A look ’behind the screens’ of Amsterdam's leading HR tech company">
+    <meta itemprop="description" content="A look ’behind the screens’ of Amsterdam's leading HR tech company. Information on what the tech teams are working on and events we host or organize.">
+    <meta itemprop="image" content="https://tech.effectory.com/images/open-graph-preview.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="A look ’behind the screens’ of Amsterdam's leading HR tech company">
+    <meta name="twitter:description" content="A look ’behind the screens’ of Amsterdam's leading HR tech company. Information on what the tech teams are working on and events we host or organize.">
+    <meta name="twitter:site" content="@effectory">
+    <meta name="twitter:creator" content="@effectory">
+    <meta name="twitter:image:src" content="https://tech.effectory.com/images/twitter-preview.jpg">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="A look ’behind the screens’ of Amsterdam's leading HR tech company">
+    <meta name="og:description" content="A look ’behind the screens’ of Amsterdam's leading HR tech company. Information on what the tech teams are working on and events we host or organize.">
+    <meta name="og:image" content="https://tech.effectory.com/images/open-graph-preview.jpg">
+    <meta name="og:url" content="https://tech.effectory.com">
+    <meta name="og:site_name" content="tech @ Effectory">
+    <meta name="og:type" content="website">
+    <!-- Open Graph LinkedIn -->
+    <meta property="og:title" content="A look ’behind the screens’ of Amsterdam's leading HR tech company"/>
+    <meta property="og:image" content="https://tech.effectory.com/images/open-graph-preview.jpg" />
+    <meta property="og:description" content="A look ’behind the screens’ of Amsterdam's leading HR tech company. Information on what the tech teams are working on and events we host or organize." />
+    <meta property="og:url" content="https://tech.effectory.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+    <body class="fade-out no-js"> 
+        <script>
+            document.body.classList.remove('no-js');
+        </script>
+        <header>
+            <nav>
+                <img src="https://tech.effectory.com/icons/effectory-logo.svg" height="40" class="logo" alt="" />
+
+                <ul class="social">
+                    <li>
+                        <a href="https://www.linkedin.com/company/22054/" target="_blank" rel="noreferrer">
+                            <img src="https://tech.effectory.com/icons/linkedin.svg" width="20" height="20" alt="Effectory LinkedIn profile" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/effectory" target="_blank" rel="noreferrer">
+                            <img src="https://tech.effectory.com/icons/twitter.svg" width="20" height="20" alt="Effectory Twitter" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/effectorylife" target="_blank" rel="noreferrer">
+                            <img src="https://tech.effectory.com/icons/instagram.svg" width="20" height="20" alt="EffectoryLife Instagram" />
+                        </a>
+                    </li>                 
+                </ul>
+                <a id="corp-site-link" class="btn" href="https://www.effectory.com">Company website</a>
+            </nav>
+        </header>
+
+        <main class="blog">
+            <div style="width: 60ch; margin: auto">
+                <%- body %>
+            </div>
+        </main>
+        <script src="https://tech.effectory.com/scripts/intersection-observer.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="https://tech.effectory.com/scripts/main.js"></script>
+        <script>
+            // if ('serviceWorker' in navigator) {
+            //     window.addEventListener('load', function () {
+            //     navigator.serviceWorker.register('./sw.js')
+            //         .then(function(registration) {
+            //         console.log('Service Worker registered! Scope:' + registration.scope);
+            //         })
+            //         .catch(function(err) {
+            //         console.log('Service Worker registration failed: '+ err);
+            //         });
+            //     });
+            // }
+            WebFont.load({
+                google: {
+                families: ['Poppins:400,500,600']
+                }
+            });
+        </script> 
+    </body>
+</html>
